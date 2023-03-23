@@ -6,49 +6,49 @@ import static junit.framework.Assert.assertEquals;
 
 class MilitarTeste{
     @Test
-    void deveSerSoldadoArtilhariaPertencerForcaArmadaAeria(){
+    void deveSerSoldadoArtilhariaPertencerForcaArmadaAerea(){
         FabricaAbstrata fabricaAbstrata = new FabricaArtilhariaAerea();
         Militar militar = new Militar(fabricaAbstrata);
         assertEquals("Forca Aerea", militar.designarForcaArmada());
     }
     @Test
-    void deveSerSoldadoCavalariaPertencerForcaArmadaAeria(){
+    void deveSerSoldadoCavalariaPertencerForcaArmadaAerea(){
         FabricaAbstrata fabricaAbstrata = new FabricaCavalariaAerea();
         Militar militar = new Militar(fabricaAbstrata);
         assertEquals("Forca Aerea", militar.designarForcaArmada());
     }
     @Test
-    void deveSerSoldadoEngenhariaPertencerForcaArmadaAeria(){
+    void deveSerSoldadoEngenhariaPertencerForcaArmadaAerea(){
         FabricaAbstrata fabricaAbstrata = new FabricaEngenhariaAerea();
         Militar militar = new Militar(fabricaAbstrata);
         assertEquals("Forca Aerea", militar.designarForcaArmada());
     }
     @Test
-    void deveSerSoldadoInfantariaPertencerForcaArmadaAeria(){
+    void deveSerSoldadoInfantariaPertencerForcaArmadaAerea(){
         FabricaAbstrata fabricaAbstrata = new FabricaInfantariaAerea();
         Militar militar = new Militar(fabricaAbstrata);
         assertEquals("Forca Aerea", militar.designarForcaArmada());
     }
     @Test
-    void deveSerSoldadoArtilhariaForcaArmadaAeria(){
+    void deveSerSoldadoArtilhariaForcaArmadaAerea(){
         FabricaAbstrata fabricaAbstrata = new FabricaArtilhariaAerea();
         Militar militar = new Militar(fabricaAbstrata);
         assertEquals("Artilharia", militar.formacaoSoldado());
     }
     @Test
-    void deveSerSoldadoCavalariaForcaArmadaAeria(){
+    void deveSerSoldadoCavalariaForcaArmadaAerea(){
         FabricaAbstrata fabricaAbstrata = new FabricaCavalariaAerea();
         Militar militar = new Militar(fabricaAbstrata);
         assertEquals("Cavalaria", militar.formacaoSoldado());
     }
     @Test
-    void deveSerSoldadoEngenhariaForcaArmadaAeria(){
+    void deveSerSoldadoEngenhariaForcaArmadaAerea(){
         FabricaAbstrata fabricaAbstrata = new FabricaEngenhariaAerea();
         Militar militar = new Militar(fabricaAbstrata);
         assertEquals("Engenharia", militar.formacaoSoldado());
     }
     @Test
-    void deveSerSoldadoInfantariaForcaArmadaAeria(){
+    void deveSerSoldadoInfantariaForcaArmadaAerea(){
         FabricaAbstrata fabricaAbstrata = new FabricaInfantariaAerea();
         Militar militar = new Militar(fabricaAbstrata);
         assertEquals("Infantaria", militar.formacaoSoldado());
